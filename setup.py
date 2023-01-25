@@ -8,11 +8,13 @@ setup(
   author = 'Anders Israelsson',                
   author_email = 'anders.israelsson@math.uu.se',     
   url = 'https://github.com/andis854/matrix_rdn_det',   
-  download_url = 'https://github.com/andis854/matrix_rdn_det/archive/v_01.tar.gz',   
+  download_url = 'https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_01.tar.gz',   
   keywords = ['linear algebra', 'matrix', 'random', 'determinant'],   
   install_requires=[            # I get to this in a second
           'numpy',
-          'beautifulsoup4',
+          'sys',
+          'argparse',
+          'matrix_rdn_det'
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',      
