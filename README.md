@@ -14,9 +14,9 @@ $ pip install matrix_rdn_det
 ### Usage
 
 In your Python terminal or script type
-'''Python
+```Python
 >>> from matrix_rdn_det import matrix_gen
-'''
+```
 
 
 
