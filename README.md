@@ -1,12 +1,11 @@
 # matrix_rdn_det - Randomize a matrix with the determinant value as parameter
+Below we describe two ways of installing and using this script; calling it from a Linux shell or from a Python script/terminal.
 
-## Usage
-
-In the following paragraphs, I am going to describe how you can get and use Scrapeasy for your own projects.
+## Python
 
 ###  Download
 
-To download matrix_rdn_det, either fork this github repo or simply use Pypi via pip.
+1. To download matrix_rdn_det, either DOWNLOAD AND PUT IN DIRECTORY or use Pypi via pip.
 ```sh
 $ pip install matrix_rdn_det
 ```
@@ -17,6 +16,18 @@ In your Python terminal or script type
 ```Python
 from matrix_rdn_det import matrix_gen
 ```
+Now call the function using
+```Python
+matrix_gen
+```
+The syntax is 
+```Python
+matrix_gen(dimension=2, det_value=1, lower_bound=-9, upper_bound=10, rdn_prm=0, attempts=200)
+```
+
+
+
+
 
 
 
