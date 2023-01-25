@@ -26,7 +26,11 @@ matrix_gen(dimension=2, det_value=1, lower_bound=-9, upper_bound=10, rdn_prm=0, 
 ```
 
 
+## Linux Shell
 
+### Download
+
+### Usage
 
 
 
