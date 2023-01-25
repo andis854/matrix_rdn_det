@@ -1,4 +1,4 @@
-!/home/runner/matrixwithcontrolleddeterminant/venv/bin/python
+#!/usr/bin/python
 
 # Created by: Anders Israelsson @ Uppsala University, 2023-01-23
 
