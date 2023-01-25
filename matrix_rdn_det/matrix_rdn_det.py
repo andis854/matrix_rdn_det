@@ -1,8 +1,6 @@
 #!/usr/bin/python
 
-# Created by: Anders Israelsson @ Uppsala University, 2023-01-23
-
-# ta bort skit
+# Created by: Anders Israelsson @ Uppsala University, 2023
 
 import numpy
 
