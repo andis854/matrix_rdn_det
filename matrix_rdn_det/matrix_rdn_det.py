@@ -223,7 +223,7 @@ def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10,
     -----
     This can be used for e.g. linear algebra teachers that want to create system of equations exercises 
     that are easy to solve by hand and possibly where fractions are avoided 
-    (if det_value is chosen to be \u00B1).
+    (if det_value is chosen to be \u00B11).
     
     When the dimension is 2 or 3 the difference between lower_bound and upper_bound has to be at
     least 3 (except if lower_bound <= -1 and upper_bound >=1). This is to ensure that the problem
@@ -723,7 +723,11 @@ if __name__ == '__main__':
                           -3 & 11 & -1 & -1 & -3 & 8 & 5 \\\\
                           9 & 4 & 6 & -2 & 9 & 6 & -3 \\\\
                           -1 & 7 & 13 & 5 & 6 & -3 & 12'''
-    parser = argparse.ArgumentParser(description='Randomize a matrix with the determinant value as a parameter. The output is LaTeX compatible.\n\nThis can be used for e.g. linear algebra teachers that want to create system of equations exercises \nthat are easy to solve by hand and possibly where fractions are avoided \n(if det_value is chosen to be \u00B1).', formatter_class=argparse.RawTextHelpFormatter, epilog=_epilog)
+    parser = argparse.ArgumentParser(description='''                        Randomize a matrix with the determinant value as a parameter. The output is LaTeX compatible.
+    
+                        This can be used for e.g. linear algebra teachers that want to create system of equations exercises 
+                        that are easy to solve by hand and possibly where fractions are avoided 
+                        (if det_value is chosen to be \u00B11).''', formatter_class=argparse.RawTextHelpFormatter, epilog=_epilog)
 
     parser.add_argument('parameters', nargs='*', help='''Set the parameters [dimension, det_value, lower_bound, upper_bound, rdn_prm, attempts]. 
           dimension
