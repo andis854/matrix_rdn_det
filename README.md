@@ -1,5 +1,5 @@
 # matrix_rdn_det 
-Randomize a matrix with the determinant value as parameter
+Randomize a matrix with the determinant value as parameter.
 
 Below we describe two ways of installing and using this script; by calling it from a Linux shell or from a Python shell.
 
