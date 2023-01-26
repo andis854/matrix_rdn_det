@@ -14,7 +14,7 @@ $ pip install matrix_rdn_det
 ```
 2. Download the source code, extract the file matrix_rdn_det.py and put in a directory that is a search path of Python, e.g.
 ```sh
-~/.local/lib/python3.10/site-packages/
+~/.local/lib/python3.10/site-packages/ # Replace this with appropriate search path.
 ```
 To find the available search paths, type in the following in a Python terminal.
 ```Python
@@ -43,9 +43,35 @@ For a detailed explanation, type
 
 ## Linux Shell
 
-### Download
+###  Download
+
+Download the source code, extract the file matrix_rdn_det.py and put in a directory that is in the variable $PATH, e.g.
+```sh
+~/.local/bin/ # Example of a common path.
+```
+To find the available search paths, type the following in a Linux terminal.
+```sh
+$ echo $PATH
+```
 
 ### Usage
+
+In your Linux terminal type
+```bash
+$ from matrix_rdn_det import matrix_gen
+```
+Now call the function using
+```Python
+matrix_gen
+```
+The syntax is 
+```Python
+matrix_gen(dimension=2, det_value=1, lower_bound=-9, upper_bound=10, rdn_prm=0, attempts=200)
+```
+For a detailed explanation, type
+```Python
+>>> help(matrix_gen)
+```
 
 
 
