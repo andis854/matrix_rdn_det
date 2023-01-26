@@ -74,7 +74,7 @@ def gcd(array):
         return gcd(numpy.array([array[1], array[0] % array[1]]))
 
 
-def numpy_to_latex(matrix,_print=False):
+def numpy2latex(matrix,_print=False):
     """Make numpy array LaTeX friendly.
     
     Parameters
@@ -104,15 +104,15 @@ def numpy_to_latex(matrix,_print=False):
     
     Examples
     --------
-    >>> numpy_to_latex(numpy.array([[4,-3],[5,2],[-8,5]]))
+    >>> numpy2latex(numpy.array([[4,-3],[5,2],[-8,5]]))
     '4 & -3 \\\\\n5 & 2 \\\\\n-8 & 5'
     
-    >>> numpy_to_latex(numpy.array([[4,-3],[5,2],[-8,5]]),_print=True)
+    >>> numpy2latex(numpy.array([[4,-3],[5,2],[-8,5]]),_print=True)
     4 & -3 \\
     5 & 2 \\
     -8 & 5
     
-    >>> print(numpy_to_latex(numpy.array([[4,-3],[5,2],[-8,5]])))
+    >>> print(numpy2latex(numpy.array([[4,-3],[5,2],[-8,5]])))
     4 & -3 \\
     5 & 2 \\
     -8 & 5"""
@@ -750,5 +750,5 @@ if __name__ == '__main__':
 
 
     a = matrix_gen(int(arguments[0]),int(arguments[1]),int(arguments[2]),int(arguments[3]),int(arguments[4]),int(arguments[5]))
-    sys.stdout.write(numpy_to_latex(a,_print=False)+'\n')
+    sys.stdout.write(numpy2latex(a,_print=False)+'\n')
 
