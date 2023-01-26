@@ -1,6 +1,8 @@
 # matrix_rdn_det 
 Randomize a matrix with the determinant value as parameter.
 
+This can be used for e.g. linear algebra teachers that want to create system of equations exercises that are easy to solve by hand and possibly where fractions are avoided (if det_value is chosen to be $\pm 1$).
+
 Below we describe two ways of installing and using this script; by calling it from a Linux shell or from a Python shell.
 
 ## Using Python shell (works for Windows)
