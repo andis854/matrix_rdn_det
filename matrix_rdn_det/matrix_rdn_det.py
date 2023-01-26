@@ -74,6 +74,49 @@ def gcd(array):
         return gcd(numpy.array([array[1], array[0] % array[1]]))
 
 
+def numpy_to_latex(matrix,_print=False):
+    """Make numpy array LaTeX friendly.
+    
+    Parameters
+    ----------
+    matrix : numpy.array
+        Array that is written LaTeX friendly. 
+    det_value : bool, optional
+        If true, print the output in terminal. 
+    
+    Returns
+    -------
+    output : str
+        A numpy array with shape [dimension,dimension].
+    
+
+    Notes
+    -----
+    .... Fixa + nedan
+
+    Examples
+    --------
+    >>> matrix_gen()
+    array([[ 9, -1],
+       [ 1,  0]])"""
+    if not type(matrix) is numpy.ndarray:
+        raise TypeError('Input must be of type numpy.ndarray')
+    elif not type(_print) is bool:
+        raise TypeError('_print must be of type bool')
+    dimensions = numpy.array([numpy.size(matrix,axis=0),numpy.size(matrix,axis=1)])
+    output = ''
+    for row in range(0,dimensions[0]):
+        for column in range(0,dimensions[1]):
+            output += str(matrix[row,column])
+            if column < dimensions[1] - 1:
+                output += ' & '
+            elif row < dimensions[0] - 1:
+                output += ' \\\\\n'
+    if _print: # If true, print output to terminal.
+        print(output)
+        return output
+    else: # If false, return output.
+        return output
 
 
 
@@ -134,19 +177,19 @@ def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10,
     
     Parameters
     ----------
-    dimension : int
+    dimension : int, optional
         Dimension of the matrix. If set to a non-positive integer the function returns an empty matrix.
-    det_value : int
+    det_value : int, optional
         Value of the determinant of the matrix. Must be an integer.
-    lower_bound : int
+    lower_bound : int, optional
         Sets the lower bound of the entries in the matrix to lower_bound.
-    upper_bound : int
+    upper_bound : int, optional
         Sets the upper bound of the entries in the matrix to upper_bound-1.
-    rdn_prm : int
+    rdn_prm : int, optional
         Sets the number of randomized parameters in the function. This can be used to speed 
         up the calculations if the determant value is large (e.g. 7 or larger). If not a
         positive integer, rdn_prm is set to be 0.
-    attempts : int
+    attempts : int, optional
         Sets the number of attempts to randomized parameters in the function. This is used 
         to restart the function if the calculations are taking too long if the determinant
         value is large (e.g. 7 or larger). If not a positive integer, rdn_prm is set to be 200.
@@ -688,15 +731,5 @@ if __name__ == '__main__':
 
 
     a = matrix_gen(int(arguments[0]),int(arguments[1]),int(arguments[2]),int(arguments[3]),int(arguments[4]),int(arguments[5]))
-    dimension = numpy.size(a,axis=0)
-    output = ''
-    for row in range(0,dimension): 
-        for column in range(0,dimension): 
-            output += str(a[row,column])
-            if column < dimension - 1:
-                output += ' & '
-            elif row < dimension - 1:
-                output += ' \\\\\n'
-    output += '\n'
-    sys.stdout.write(output)
+    sys.stdout.write(numpy_to_latex(a,_print=False)+'\n')
 
