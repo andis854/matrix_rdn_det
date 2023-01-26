@@ -8,7 +8,7 @@ setup(
   author = 'Anders Israelsson',                
   author_email = 'anders.israelsson@math.uu.se',     
   url = 'https://github.com/andis854/matrix_rdn_det',   
-  download_url = 'https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_01.tar.gz',   
+  download_url = 'https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.1.tar.gz',   
   keywords = ['linear algebra', 'matrix', 'random', 'determinant'],   
   install_requires=[            # I get to this in a second
           'numpy',
