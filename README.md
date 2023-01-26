@@ -1,19 +1,19 @@
 # matrix_rdn_det 
 Randomize a matrix with the determinant value as parameter
 
-Below we describe two ways of installing and using this script; by calling it from a Linux shell or from a Python script/terminal.
+Below we describe two ways of installing and using this script; by calling it from a Linux shell or from a Python shell.
 
-## Python
+## Using Python shell (works for Windows)
 
 ###  Download
 
 Use one of the following methods:
 1. Using Pypi via pip:
-```sh
+```bash
 $ pip install matrix_rdn_det
 ```
 2. Download the source code, extract the file matrix_rdn_det.py and put in a directory that is a search path of Python, e.g.
-```sh
+```bash
 ~/.local/lib/python3.10/site-packages/ # Replace this with appropriate search path.
 ```
 To find the available search paths, type in the following in a Python terminal.
@@ -41,16 +41,16 @@ For a detailed explanation, type
 >>> help(matrix_gen)
 ```
 
-## Linux Shell
+## Using Linux Shell
 
 ###  Download
 
 Download the source code, extract the file matrix_rdn_det.py and put in a directory that is in the variable $PATH, e.g.
-```sh
+```bash
 ~/.local/bin/ # Example of a common path.
 ```
 To find the available search paths, type the following in a Linux terminal.
-```sh
+```bash
 $ echo $PATH
 ```
 
