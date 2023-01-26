@@ -22,9 +22,6 @@ To find the available search paths, type in the following in a Python terminal.
 >>> sys.path
 ```
 
-
-
-
 ### Usage
 
 In your Python terminal or script type
@@ -39,7 +36,10 @@ The syntax is
 ```Python
 matrix_gen(dimension=2, det_value=1, lower_bound=-9, upper_bound=10, rdn_prm=0, attempts=200)
 ```
-
+For a detailed explanation, type
+```Python
+>>> help(matrix_gen)
+```
 
 ## Linux Shell
 
