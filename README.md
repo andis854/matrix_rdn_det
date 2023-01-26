@@ -56,21 +56,17 @@ $ echo $PATH
 
 ### Usage
 
-In your Linux terminal type
+In your Linux terminal, the command is
 ```bash
-$ from matrix_rdn_det import matrix_gen
+$ matrix_rdn_det.py
 ```
-Now call the function using
-```Python
-matrix_gen
+The syntax is
+```bash
+$ matrix_rdn_det.py [-h] [ dimension det_value ]
 ```
-The syntax is 
-```Python
-matrix_gen(dimension=2, det_value=1, lower_bound=-9, upper_bound=10, rdn_prm=0, attempts=200)
-```
-For a detailed explanation, type
-```Python
->>> help(matrix_gen)
+For more help, run:
+```bash
+matrix_rdn_det.py -h
 ```
 
 
