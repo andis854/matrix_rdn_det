@@ -92,13 +92,32 @@ def numpy_to_latex(matrix,_print=False):
 
     Notes
     -----
-    .... Fixa + nedan
-
+    The output can be used together with LaTeX environment, e.g.
+    \begin{pmatrix}
+        [output]
+    \end{pmatrix}
+    or
+    \begin{array}
+        [output]
+    \end{array}
+    
+    
     Examples
     --------
-    >>> matrix_gen()
-    array([[ 9, -1],
-       [ 1,  0]])"""
+    >>> numpy_to_latex(numpy.array([[4,-3],[5,2],[-8,5]]))
+    '4 & -3 \\\\\n5 & 2 \\\\\n-8 & 5'
+    
+    >>> numpy_to_latex(numpy.array([[4,-3],[5,2],[-8,5]]),_print=True)
+    4 & -3 \\
+    5 & 2 \\
+    -8 & 5
+    
+    >>> print(numpy_to_latex(numpy.array([[4,-3],[5,2],[-8,5]])))
+    4 & -3 \\
+    5 & 2 \\
+    -8 & 5"""
+    
+    
     if not type(matrix) is numpy.ndarray:
         raise TypeError('Input must be of type numpy.ndarray')
     elif not type(_print) is bool:
@@ -114,7 +133,7 @@ def numpy_to_latex(matrix,_print=False):
                 output += ' \\\\\n'
     if _print: # If true, print output to terminal.
         print(output)
-        return output
+        return
     else: # If false, return output.
         return output
 
