@@ -14,7 +14,7 @@ $ pip install matrix_rdn_det
 ```
 2. Download the source code, extract the file matrix_rdn_det.py and put in a directory that is a search path of Python, e.g.
 ```bash
-~/.local/lib/python3.10/site-packages/ # Replace this with appropriate search path.
+~/.local/lib/python3.10/site-packages/ # Example of a common path.
 ```
 To find the available search paths, type in the following in a Python terminal.
 ```Python
