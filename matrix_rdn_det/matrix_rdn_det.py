@@ -406,7 +406,7 @@ def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10,
                 coeff_enumeration = numpy.arange(_dim) # Keep track of the unknowns and the
                 # defined parameters
         
-                coeff_geq_2 = numpy.size(cofactors[numpy.abs(cofactors) > 1]) # Calculates how
+                coeff_geq_2 = numpy.size(cofactors[numpy.abs(cofactors) > 1]) # Calculates which
                 # cofactors that are >= 2.
                 while coeff_geq_2 > 1 or nonzero_variables > 2: # Reduce diophantine equation 
                     # there is at most one cofactor and the number of cofactors (with the 
@@ -442,7 +442,7 @@ def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10,
 
                 if numpy.count_nonzero(final_equation) >= 3 or det_value % final_equation[order[0]] == 0: # check if solution exists. This can happen if there are 
                     # either >= 2 cofactors left (since only one cofactors can have absolute 
-                    # value > 1, gcd of thecoefficients has to be 1) or if there is 1 
+                    # value > 1, gcd of the coefficients has to be 1) or if there is 1 
                     # coefficients which divides the right hand side.
                     sol_exists = True
             elif _dim == 1 and det_value % cofactors[0] == 0: # Treats the case when only one 
