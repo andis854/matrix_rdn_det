@@ -23,12 +23,12 @@ Move the directory matrix_rdn_det/matrix_rdn_det (i.e. the inner directory) to a
 ~/.local/lib/python3.10/site-packages/ # Example of a common path.
 ```
 3. Download the source code: (works for Windows) 
-Download the files in tar.gz or zip form. Extract the file matrix_rdn_det.py and put in a directory that is a search path of Python, e.g.
+Download the files in [tar.gz](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.tar.gz) or [zip](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.2.zip) form. Extract the file matrix_rdn_det.py and put in a directory that is a search path of Python, e.g.
 ```bash
 ~/.local/lib/python3.10/site-packages/ # Example of a common path.
 ```
 
-To find the available search paths, type in the following in a Python terminal.
+To find the available search paths, type the following in a Python terminal.
 ```Python
 >>> import sys
 >>> sys.path
