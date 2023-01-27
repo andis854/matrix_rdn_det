@@ -1,1 +1,1 @@
-
+from matrix_rdn_det.matrix_rdn_det import det_int,matrix_gen,numpy2latex
