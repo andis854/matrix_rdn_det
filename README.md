@@ -23,7 +23,7 @@ Move the directory matrix_rdn_det/matrix_rdn_det (i.e. the inner directory) to a
 ~/.local/lib/python3.10/site-packages/ # Example of a common path.
 ```
 3. Download the source code: (works for Windows) 
-Download the files in [tar.gz](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.tar.gz) or [zip](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.2.zip) form. Extract the file matrix_rdn_det.py and put in a directory that is a search path of Python, e.g.
+Download the files in [tar.gz](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.tar.gz) or [zip](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.zip) form. Extract the directory matrix_rdn_de and put in a directory that is a search path of Python, e.g.
 ```bash
 ~/.local/lib/python3.10/site-packages/ # Example of a common path.
 ```
@@ -38,28 +38,46 @@ To find the available search paths, type the following in a Python terminal.
 
 In your Python terminal or script type
 ```Python
->>> from matrix_rdn_det import matrix_gen
+>>> import matrix_rdn_det
 ```
 Now call the function using
 ```Python
-matrix_gen
+matrix_rdn_det.matrix_gen
 ```
 The syntax is 
 ```Python
-matrix_gen(dimension=2, det_value=1, lower_bound=-9, upper_bound=10, rdn_prm=0, attempts=200)
+matrix_rdn_det.matrix_gen(dimension=2, det_value=1, lower_bound=-9, upper_bound=10, rdn_prm=0, attempts=200)
 ```
 For a detailed explanation, type
 ```Python
->>> help(matrix_gen)
+>>> help(matrix_rdn_det)
+```
+or
+```Python
+>>> help(matrix_rdn_det.matrix_gen)
 ```
 
 ## Using Linux Shell
 
 ###  Download
 
-Download the source code, extract the file matrix_rdn_det.py and put in a directory that is in the variable $PATH, e.g.
+1. Using git clone:
+```bash
+$ git clone https://github.com/andis854/matrix_rdn_det.git
+```
+Move the file matrix_rdn_det.py to a directory that is in the variable $PATH, e.g.
 ```bash
 ~/.local/bin/ # Example of a common path.
+```
+2. Download the source code: 
+Download the files in [tar.gz](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.tar.gz) or [zip](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.zip) form. Extract the file matrix_rdn_det.py to a directory that is in the variable $PATH, e.g.
+```bash
+~/.local/bin/ # Example of a common path.
+```
+
+Make the script executable, e.g.
+```bash
+$ chmod u+x ~/.local/bin/matrix_rdn_det # Use the path to the file
 ```
 To find the available search paths, type the following in a Linux terminal.
 ```bash
