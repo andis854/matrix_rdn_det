@@ -105,7 +105,7 @@ def numpy2latex(matrix,_print=False):
     Examples
     --------
     >>> numpy2latex(numpy.array([[4,-3],[5,2],[-8,5]]))
-    '4 & -3 \\\\\n5 & 2 \\\\\n-8 & 5'
+    4 & -3 \\\\\\\\\\n5 & 2 \\\\\\\\\\n-8 & 5'
     
     >>> numpy2latex(numpy.array([[4,-3],[5,2],[-8,5]]),_print=True)
     4 & -3 \\
