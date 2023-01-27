@@ -5,19 +5,29 @@ This can be used for e.g. linear algebra teachers that want to create system of 
 
 Below we describe two ways of installing and using this script; by calling it from a Linux shell or from a Python shell.
 
-## Using Python shell (works for Windows)
+## Using Python shell
 
 ###  Download
 
-Use one of the following methods:
-1. Using Pypi via pip:
+Use one of the following methods: 
+1. Using Pypi via pip:  (works for Windows)
 ```bash
 $ pip install matrix_rdn_det
 ```
-2. Download the source code, extract the file matrix_rdn_det.py and put in a directory that is a search path of Python, e.g.
+2. Using git clone:
+```bash
+$ git clone https://github.com/andis854/matrix_rdn_det.git
+```
+Move the directory matrix_rdn_det/matrix_rdn_det (i.e. the inner directory) to a directory that is a search path of Python, e.g.
 ```bash
 ~/.local/lib/python3.10/site-packages/ # Example of a common path.
 ```
+3. Download the source code: (works for Windows) 
+Download the files in tar.gz or zip form. Extract the file matrix_rdn_det.py and put in a directory that is a search path of Python, e.g.
+```bash
+~/.local/lib/python3.10/site-packages/ # Example of a common path.
+```
+
 To find the available search paths, type in the following in a Python terminal.
 ```Python
 >>> import sys
