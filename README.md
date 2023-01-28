@@ -1,9 +1,9 @@
 # matrix_rdn_det 
 Randomize a matrix with the determinant value as parameter.
 
-This can be used for e.g. linear algebra teachers that want to create system of equations exercises that are easy to solve by hand and possibly where fractions are avoided (if det_value is chosen to be $\pm 1$).
+This package can be used for e.g. linear algebra teachers that want to create system of equations exercises that are easy to solve by hand and possibly where fractions are avoided (if det_value is chosen to be $\pm 1$).
 
-Below we describe two ways of installing and using this script; by calling it from a Linux shell or from a Python shell.
+Below we describe two ways of installing and using this package; by calling it from a Linux shell or from a Python shell.
 
 ## Using Python shell
 
@@ -23,7 +23,7 @@ Move the directory matrix_rdn_det/matrix_rdn_det (i.e. the inner directory) to a
 ~/.local/lib/python3.10/site-packages/ # Example of a common path.
 ```
 3. Download the source code: (works for Windows) 
-Download the files in [tar.gz](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.tar.gz) or [zip](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.zip) form. Extract the directory matrix_rdn_de and put in a directory that is a search path of Python, e.g.
+Download the files in [tar.gz](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.tar.gz) or [zip](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.zip) form. Extract the directory _matrix_rdn_det_ and put in a directory that is a search path of Python, e.g.
 ```bash
 ~/.local/lib/python3.10/site-packages/ # Example of a common path.
 ```
