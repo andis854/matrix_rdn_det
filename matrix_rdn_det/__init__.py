@@ -8,7 +8,7 @@ that are easy to solve by hand and possibly where fractions are avoided
 Functions
 -------
 det_int
-  Calculate the determinant of a square matrix with integer entries
+  Calculate the determinant of a square matrix with integer entries.
   
     Parameters
     ----------
@@ -28,12 +28,12 @@ numpy2latex
     matrix : numpy.array
         Array that will be written LaTeX friendly. 
     det_value : bool, optional
-        If true, print the output in terminal. 
+        If true, print the output in terminal. Otherwise return as a string.
     
     Returns
     -------
     output : str
-        A numpy array with shape [dimension,dimension].
+        If _print is set to False the function returns a string that is LaTeX friendly when printed. 
     
     Notes
     -----
