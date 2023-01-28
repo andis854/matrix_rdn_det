@@ -87,4 +87,4 @@ matrix_gen
     speed up the calculcations. However, the randomness of the entries will decrease. The number
     of attemps is only used if there are randomized parameters set.
 """
-from matrix_rdn_det.matrix_rdn_det import det_int,matrix_gen,numpy2latex
+from matrix_rdn_det import det_int,matrix_gen,numpy2latex
