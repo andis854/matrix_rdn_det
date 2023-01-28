@@ -1,7 +1,7 @@
 # matrix_rdn_det 
 Randomize a matrix with the determinant value as parameter.
 
-This package can be used for e.g. linear algebra teachers that want to create system of equations exercises that are easy to solve by hand and possibly where fractions are avoided (if det_value is chosen to be $\pm 1$).
+This package can be used for e.g. linear algebra teachers that want to create system of equations exercises that are easy to solve by hand and possibly where fractions are avoided (if _det_value_ is chosen to be $\pm 1$).
 
 Below we describe two ways of installing and using this package; by calling it from a Linux shell or from a Python shell.
 
@@ -18,7 +18,7 @@ $ pip install matrix_rdn_det
 ```bash
 $ git clone https://github.com/andis854/matrix_rdn_det.git
 ```
-Move the directory matrix_rdn_det/matrix_rdn_det (i.e. the inner directory) to a directory that is a search path of Python, e.g.
+Move the directory _matrix_rdn_det/matrix_rdn_det_ (i.e. the inner directory) to a directory that is a search path of Python, e.g.
 ```bash
 ~/.local/lib/python3.10/site-packages/ # Example of a common path.
 ```
@@ -28,7 +28,7 @@ Download the files in [tar.gz](https://github.com/andis854/matrix_rdn_det/archiv
 ~/.local/lib/python3.10/site-packages/ # Example of a common path.
 ```
 
-To find the available search paths, type the following in a Python terminal.
+To find the available search paths, type the following commands in a Python terminal.
 ```Python
 >>> import sys
 >>> sys.path
@@ -65,12 +65,12 @@ or
 ```bash
 $ git clone https://github.com/andis854/matrix_rdn_det.git
 ```
-Move the file matrix_rdn_det.py to a directory that is in the variable $PATH, e.g.
+Move the file _matrix_rdn_det.py_ to a directory that is in the shell variable $PATH, e.g.
 ```bash
 ~/.local/bin/ # Example of a common path.
 ```
 2. Download the source code: 
-Download the files in [tar.gz](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.tar.gz) or [zip](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.zip) form. Extract the file matrix_rdn_det.py to a directory that is in the variable $PATH, e.g.
+Download the files in [tar.gz](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.tar.gz) or [zip](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.zip) form. Extract the file _matrix_rdn_det.py_ to a directory that is in the variable $PATH, e.g.
 ```bash
 ~/.local/bin/ # Example of a common path.
 ```
@@ -98,8 +98,6 @@ For more help, run:
 ```bash
 matrix_rdn_det.py -h
 ```
-
-
 
 
 License
