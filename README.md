@@ -65,7 +65,7 @@ or
 ```bash
 $ git clone https://github.com/andis854/matrix_rdn_det.git
 ```
-Move the file _matrix_rdn_det.py_ to a directory that is in the shell variable $PATH, e.g.
+&nbsp;&nbsp; Move the file _matrix_rdn_det.py_ to a directory that is in the shell variable $PATH, e.g.
 ```bash
 ~/.local/bin/ # Example of a common path.
 ```
