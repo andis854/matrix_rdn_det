@@ -65,7 +65,7 @@ or
 ```bash
 $ git clone https://github.com/andis854/matrix_rdn_det.git
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Move the file _matrix_rdn_det.py_ to a directory that is in the shell variable $PATH, e.g.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Move the file _matrix_rdn_det.py_ to a directory that is in the shell variable $PATH, e.g.
 ```bash
 ~/.local/bin/ # Example of a common path.
 ```
@@ -77,7 +77,7 @@ Download the files in [tar.gz](https://github.com/andis854/matrix_rdn_det/archiv
 
 Make the script executable, e.g.
 ```bash
-$ chmod u+x ~/.local/bin/matrix_rdn_det # Use the path to the file
+$ chmod u+x ~/.local/bin/matrix_rdn_det # Use the path of the file
 ```
 To find the available search paths, type the following in a Linux terminal.
 ```bash
