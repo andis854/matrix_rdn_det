@@ -5,17 +5,28 @@ Randomize a matrix with the determinant value as a parameter. The output is LaTe
                         that are easy to solve by hand and possibly where fractions are avoided 
                         (if det_value is chosen to be \u00B11).
                         
-Methods
+Functions
 -------
 det_int
-  .........
+  Calculate the determinant of a square matrix with integer entries
+  
+    Parameters
+    ----------
+    matrix : numpy.array
+        Square matrix, which determinant is to be evaluated.
+    
+    Returns
+    -------
+    determinant : int
+        The determinant of the input matrix.
+        
 numpy2latex
   Make numpy array LaTeX friendly.
     
     Parameters
     ----------
     matrix : numpy.array
-        Array that is written LaTeX friendly. 
+        Array that will be written LaTeX friendly. 
     det_value : bool, optional
         If true, print the output in terminal. 
     
@@ -34,7 +45,9 @@ numpy2latex
     \begin{array}
         [output]
     \end{array}
-Randomize a matrix with the determinant value as parameter.
+
+matrix_gen
+  Randomize a matrix with the determinant value as parameter.
     
     Parameters
     ----------
