@@ -10,7 +10,7 @@ Below we describe two ways of installing and using this package; by calling it f
 ###  Download
 
 Use one of the following methods: 
-1. Using Pypi via pip:  (works for Windows)
+1. Using Pypi via pip:  (also works for Windows)
 ```bash
 $ pip install matrix_rdn_det
 ```
@@ -22,7 +22,7 @@ Move the directory _matrix_rdn_det/matrix_rdn_det_ (i.e. the inner directory) to
 ```bash
 ~/.local/lib/python3.10/site-packages/ # Example of a common path.
 ```
-3. Download the source code: (works for Windows) 
+3. Download the source code: (also works for Windows) 
 Download the files in [tar.gz](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.tar.gz) or [zip](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.zip) form. Extract the directory _matrix_rdn_det/matrix_rdn_det_ (i.e. the inner directory) and put in a directory that is a search path of Python, e.g.
 ```bash
 ~/.local/lib/python3.10/site-packages/ # Example of a common path.
