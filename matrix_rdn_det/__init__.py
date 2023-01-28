@@ -1,9 +1,9 @@
 """
-Randomize a matrix with the determinant value as a parameter. The output is LaTeX compatible.
+Randomize a matrix with the determinant value as a parameter.
     
-                        This can be used for e.g. linear algebra teachers that want to create system of equations exercises 
-                        that are easy to solve by hand and possibly where fractions are avoided 
-                        (if det_value is chosen to be \u00B11).
+This can be used for e.g. linear algebra teachers that want to create system of equations exercises 
+that are easy to solve by hand and possibly where fractions are avoided 
+(if det_value is chosen to be \u00B11).
                         
 Functions
 -------
