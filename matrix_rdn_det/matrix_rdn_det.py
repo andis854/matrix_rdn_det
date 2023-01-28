@@ -94,7 +94,7 @@ def numpy2latex(matrix,_print=False):
     matrix : numpy.array
         Array that will be written LaTeX friendly. 
     det_value : bool, optional
-        If true, print the output in terminal. Otherwise return as a string
+        If true, print the output in terminal. Otherwise return as a string.
     
     Returns
     -------
@@ -161,26 +161,30 @@ def numpy2latex(matrix,_print=False):
 # matrix_gen outputs a random matrix with requested value of the determinant.
 def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10, rdn_prm = 0, attempts=200):
 
-# The function works like this: a matrix of specified dimension is requested. First, the rows 2:dimension are randomized. Then the possible values first row is calculated by solving the diophantine equation
+# In this function a matrix of specified dimension is requested. First, the rows [2:dimension] are randomized. 
+# Then the possible values first row is calculated by solving the diophantine equation
 
-    # a_1*c_1+a_2*c_2+...+a_dimension*c_dimension = det_value
+    # a_1*c_1+a_2*c_2+...+a_dimension*c_dimension = det_value.
 
 # where c_1,...,c_dimension are the cofactors of the first row of the matrix. 
-# This is done by substuting the variables with new variables until the 
+# The diophantine equation is solved by substuting the variables with new variables until the 
 # diophantine equation has only two unknown variabes. The program always try to
 # reduce the term with largest cofactor (in absolute value).
 
-  # Ex: assume that the diophantine equation is calculated as
+  # Example: assume that the diophantine equation is calculated as
 
     # 5a_1 + 7a_2 + 8a_3 = 1
 
   # Then make the following substitutions: (start with reducing 8 in the third term)
 
-    # a_2 = -a_3 + b_1 => 5a_1 +7b_1+a_3 = 1
-    # a_1 = -b_1 + b_2 => 5b_2 +2b_1 + a_3 = 1
-    # b_1 = -2b_2 + b_3 => b_2 + 2b_3 + a_3 = 1
-    # b_2 = -2b_3 + b_4 => b_4 + a_3 = 1
-    # => b_4 + a_3 = 1
+    # a_2 = -a_3 + b_1 => 5a_1 +7b_1+a_3 = 1,
+    # a_1 = -b_1 + b_2 => 5b_2 +2b_1 + a_3 = 1,
+    # b_1 = -2b_2 + b_3 => b_2 + 2b_3 + a_3 = 1,
+    # b_2 = -2b_3 + b_4 => b_4 + a_3 = 1,
+    # => b_4 + a_3 = 1.
+  
+  # That is, we have a modified and lot simpler diophantine equation. 
+  # Note that this shows that the original diophantine equation is solvable.
   # Moving everything to the left hand side we obtain the augmented matrix
   # [[0,1,1,1,0,0,0,0],
   #  [1,0,0,1,-1,0,0,0],
