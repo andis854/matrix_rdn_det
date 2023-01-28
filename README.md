@@ -94,7 +94,7 @@ The syntax is
 ```bash
 $ matrix_rdn_det.py [-h] [ dimension det_value ]
 ```
-For more help, run:
+For more help, run
 ```bash
 matrix_rdn_det.py -h
 ```
