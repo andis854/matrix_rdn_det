@@ -7,6 +7,18 @@ import numpy
 # det_int calculates the determinant of matrices with interger entries
 # and reduces the number of calculations whenever an entry is 0.
 def det_int(matrix):
+    '''Calculate the determinant of a square matrix with integer entries
+    
+    Parameters
+    ----------
+    matrix : numpy.array
+        Square matrix, which determinant is to be evaluated.
+    
+    Returns
+    -------
+    determinant : int
+        The determinant of the input matrix.
+         '''
     dimension = numpy.size(matrix, axis=0)
     if dimension != numpy.size(matrix, axis=1):
         raise TypeError('Not a square matrix!')
