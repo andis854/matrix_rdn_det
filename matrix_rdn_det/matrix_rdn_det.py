@@ -7,7 +7,9 @@ import numpy
 # det_int calculates the determinant of matrices with interger entries
 # and reduces the number of calculations whenever an entry is 0.
 def det_int(matrix):
-    '''Calculate the determinant of a square matrix with integer entries
+    '''Calculate the determinant of a square matrix with integer entries. 
+    
+    The function expands rows and columns recursively and reduces calculation by finding the rows/columns with the largest number of zeroes.
     
     Parameters
     ----------
