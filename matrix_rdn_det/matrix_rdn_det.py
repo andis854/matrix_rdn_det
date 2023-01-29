@@ -626,8 +626,9 @@ def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10,
             else:
                 randomised_parameters = numpy.random.choice(numpy.delete(numpy.arange(0,_dim-1),control_rows[0:-1]),rdn_prm,replace=False) # Chooses variables from the set of 
                 # unknowns depending on several parameters.
-                b[randomised_parameters] = numpy.random.randint(parameters_bounds[randomised_parameters,0],parameters_bounds[randomised_parameters,1]+1)
-                non_randomised_parameters = numpy.delete(numpy.arange(0,_dim-1),randomised_parameters)
+                for randomised_parameter_counter in randomised_parameters:
+                    b[randomised_parameter_counter] = numpy.random.randint(parameters_bounds[randomised_parameter_counter,0],parameters_bounds[randomised_parameter_counter,1]+1)
+                    non_randomised_parameters = numpy.delete(numpy.arange(0,_dim-1),randomised_parameter_counter)
 
             
     
