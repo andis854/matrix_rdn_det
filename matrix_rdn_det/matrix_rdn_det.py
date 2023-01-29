@@ -663,12 +663,12 @@ if __name__ == '__main__':
     import sys
     
     _epilog='''examples:
-  matrix_rdn_det 
+  matrix_rdn_det.py 
                         Outputs a matrix of dimension 2 with determinant 1 and entries between -9 and 9.
                         Example output:
                           9 & -1 \\\\
                           1 & 0
-  matrix_rdn_det 5
+  matrix_rdn_det.py 5
                         Outputs a matrix of dimension 3 with determinant 1 and entries between -9 and 9.
                         Example output:
                           -2 & 3 & 5 & 7 & 7 \\\\
@@ -676,7 +676,7 @@ if __name__ == '__main__':
                           4 & -4 & -5 & 5 & 4 \\\\
                           -9 & -9 & 1 & 5 & 0 \\\\
                           -9 & -7 & 4 & 3 & -3
-  matrix_rdn_det 5 -4
+  matrix_rdn_det.py 5 -4
                         Outputs a matrix of dimension 5 with determinant -4 and entries between -9 and 9.
                         Example output:
                           6 & 3 & 6 & 4 & -8 \\\\
@@ -684,7 +684,7 @@ if __name__ == '__main__':
                           9 & -8 & -7 & -5 & 5 \\\\
                           0 & -1 & -2 & 3 & -8 \\\\
                           -2 & -6 & -1 & -1 & -7
-  matrix_rdn_det 5 6 -3 14
+  matrix_rdn_det.py 5 6 -3 14
                         Outputs a matrix of dimension 5 with determinant 6 and entries between -3 and 13.
                         Example output:
                           11 & 1 & 4 & 3 & -1 \\\\
@@ -692,7 +692,7 @@ if __name__ == '__main__':
                           0 & 4 & 4 & 8 & 10 \\\\
                           -2 & 6 & 3 & 11 & 8 \\\\
                           -3 & 3 & 11 & 1 & 11
-  matrix_rdn_det 7 6 -3 14 2 300
+  matrix_rdn_det.py 7 6 -3 14 2 300
                         Outputs a matrix of dimension 7 with determinant 6 and entries between -3 and 13. The number
                         of randomization of 2 parameters can make the calculations faster. The parameters are 
                         randomized 300 times before the called function restarts. It is recommended to set randomized 
