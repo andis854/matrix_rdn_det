@@ -148,16 +148,6 @@ def numpy2latex(matrix,_print=False):
         return output
 
 
-
-
-
-
-
-
-
-
-
-
 # matrix_gen outputs a random matrix with requested value of the determinant.
 def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10, rdn_prm = 0, attempts=200):
 
@@ -315,10 +305,6 @@ def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10,
            [ 1,  6,  6,  7,  7,  2]])"""
 
 
-
-
-
-    
     if not type(dimension) is int:
         raise TypeError('Only integers are allowed for dimension')
     if dimension <= 0: # Take care of the special cases
@@ -344,18 +330,10 @@ def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10,
     elif dimension <= 3 and lower_bound >= upper_bound-2 and (lower_bound >= 2 or upper_bound <=-1):
         raise ValueError('the values of lower_bound and upper_bound are too narrowly chosen!')
 
-
-
-
-      
     # If rows are swapped in the end, the sign of the determinant changes.
     rdn_row = numpy.random.randint(0,dimension) 
     if rdn_row != 0:
         det_value = -det_value
-
-
-
-
 
 
     # If parameters is randomized below, choose how many attempts before restarting the function.
@@ -454,7 +432,7 @@ def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10,
                     coeff_geq_2 = numpy.size(cofactors[numpy.abs(cofactors) > 1])
                     row_counter += 1
 
-        
+                
                 final_equation = numpy.concatenate((cofactors, numpy.array([-det_value])))
                 final_equation = numpy.array(final_equation/gcd(final_equation),int)
 
@@ -480,17 +458,12 @@ def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10,
                 return matrix
         
 
-
-
         while row_counter < _dim - 1: # Makes sure every unknown variable is written as function 
             # of a parameter, in case the system of equation contains too few rows.
             sys_of_eq[row_counter, row_counter] = 1
             sys_of_eq[row_counter, row_counter + _dim] = -1
             row_counter += 1
 
-
-
-          
         # Adding final equation the system of equations
         row_counter += 1
         
@@ -665,11 +638,7 @@ def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10,
         
                 b[non_randomised_parameters[counter]] += 1
             
-        
-        
-        
-        
-            
+      
         # Part 6 - Choose one solution and concatenate it with the rest of the randomized
         # matrix rows.
         
@@ -683,8 +652,6 @@ def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10,
             solution[0,numpy.invert(zero_cofactor)] = solutions[sol_gen:sol_gen + 1, :] 
 
             matrix = numpy.concatenate((solution, matrix_red))
-        
-        
         
     
     matrix[[0,rdn_row],:] = matrix[[rdn_row,0],:]
