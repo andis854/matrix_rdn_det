@@ -103,7 +103,7 @@ def numpy2latex(matrix,_print=False):
     
     Notes
     -----
-    The output can be used together with LaTeX environment, e.g.
+    The output can be used together with some LaTeX environments, e.g.
     \begin{pmatrix}
         [output]
     \end{pmatrix}
@@ -225,7 +225,7 @@ def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10,
 
     Notes
     -----
-    This can be used for e.g. linear algebra teachers that want to create system of equations exercises 
+    This can be used for e.g. teachers in linear algebra who want to create system of equations exercises 
     that are easy to solve by hand and possibly where fractions are avoided 
     (if det_value is chosen to be \u00B11).
     
@@ -707,9 +707,26 @@ if __name__ == '__main__':
                           -1 & 7 & 13 & 5 & 6 & -3 & 12'''
     parser = argparse.ArgumentParser(description='''                        Randomize a matrix with the determinant value as a parameter. The output is LaTeX compatible.
     
-                        This can be used for e.g. linear algebra teachers that want to create system of equations 
+                        This can be used for e.g. teachers in linear algebra who want to create system of equations 
                         exercises that are easy to solve by hand and possibly where fractions are avoided 
-                        (if det_value is chosen to be \u00B11).''', formatter_class=argparse.RawTextHelpFormatter, epilog=_epilog)
+                        (if det_value is chosen to be \u00B11).
+                        
+                        When the dimension is 2 or 3 the difference between lower_bound and upper_bound has to be at
+                        least 3 (except if lower_bound <= -1 and upper_bound >=1). This is to ensure that the problem
+                        is solvable. Otherwise the difference between lower_bound and upper_bound has to be at least 2.
+
+                        If the dimension is set to 7 or higher, it is recommended to set a few random parameters to
+                        speed up the calculcations. However, the randomness of the entries will decrease. The number
+                        of attemps is only used if there are randomized parameters set.
+    
+                        The standard output can be used together with some LaTeX environments, e.g.
+                        \begin{pmatrix}
+                            [output]
+                        \end{pmatrix}
+                        or
+                        \begin{array}
+                            [output]
+                        \end{array}''', formatter_class=argparse.RawTextHelpFormatter, epilog=_epilog)
 
     parser.add_argument('parameters', nargs='*', help='''Set the parameters [dimension, det_value, lower_bound, upper_bound, rdn_prm, attempts]. 
           dimension
