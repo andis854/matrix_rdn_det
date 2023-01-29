@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 ' '
-# Created by: Anders Israelsson @ Uppsala University, 2023
+# Created by: Anders Israelsson, 2023
+# Email: andis854@outlook.com
 
 import numpy
 
@@ -728,7 +729,9 @@ if __name__ == '__main__':
                         or
                         \begin{array}
                             [output]
-                        \end{array}''', formatter_class=argparse.RawTextHelpFormatter, epilog=_epilog)
+                        \end{array}
+                        
+                        Report bugs to andis854@outlook.com''', formatter_class=argparse.RawTextHelpFormatter, epilog=_epilog)
 
     parser.add_argument('parameters', nargs='*', help='''Set the parameters [dimension, det_value, lower_bound, upper_bound, rdn_prm, attempts]. 
           dimension
