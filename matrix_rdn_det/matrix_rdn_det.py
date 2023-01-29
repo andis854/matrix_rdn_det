@@ -458,7 +458,7 @@ def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10,
                 final_equation = numpy.concatenate((cofactors, numpy.array([-det_value])))
                 final_equation = numpy.array(final_equation/gcd(final_equation),int)
 
-                if numpy.count_nonzero(final_equation) >= 3 or det_value % final_equation[order[0]] == 0: # check if solution exists. This can happen if there are 
+                if numpy.count_nonzero(final_equation) >= 3 or final_equation[-1] % final_equation[order[0]] == 0: # check if solution exists. This can happen if there are 
                     # either >= 2 cofactors left (since only one cofactors can have absolute 
                     # value > 1, gcd of the coefficients has to be 1) or if there is 1 
                     # coefficients which divides the right hand side.
@@ -494,8 +494,8 @@ def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10,
         # Adding final equation the system of equations
         row_counter += 1
         
-        sys_of_eq[row_counter - 1, row_counter + _dim - 1] = -det_value
-        sys_of_eq[row_counter - 1, coeff_enumeration] = cofactors
+        sys_of_eq[row_counter - 1, row_counter + _dim - 1] = final_equation[-1]
+        sys_of_eq[row_counter - 1, coeff_enumeration] = final_equation[:-1]
         
 
 
@@ -626,8 +626,9 @@ def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10,
             else:
                 randomised_parameters = numpy.random.choice(numpy.delete(numpy.arange(0,_dim-1),control_rows[0:-1]),rdn_prm,replace=False) # Chooses variables from the set of 
                 # unknowns depending on several parameters.
-                b[randomised_parameters] = numpy.random.randint(parameters_bounds[randomised_parameters,0],parameters_bounds[randomised_parameters,1]+1)
-                non_randomised_parameters = numpy.delete(numpy.arange(0,_dim-1),randomised_parameters)
+                for randomised_parameter_counter in randomised_parameters:
+                    b[randomised_parameter_counter] = numpy.random.randint(parameters_bounds[randomised_parameter_counter,0],parameters_bounds[randomised_parameter_counter,1]+1)
+                    non_randomised_parameters = numpy.delete(numpy.arange(0,_dim-1),randomised_parameter_counter)
 
             
     
