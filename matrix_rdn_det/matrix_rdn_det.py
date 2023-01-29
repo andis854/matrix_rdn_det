@@ -739,8 +739,8 @@ if __name__ == '__main__':
                           -1 & 7 & 13 & 5 & 6 & -3 & 12'''
     parser = argparse.ArgumentParser(description='''                        Randomize a matrix with the determinant value as a parameter. The output is LaTeX compatible.
     
-                        This can be used for e.g. linear algebra teachers that want to create system of equations exercises 
-                        that are easy to solve by hand and possibly where fractions are avoided 
+                        This can be used for e.g. linear algebra teachers that want to create system of equations 
+                        exercises that are easy to solve by hand and possibly where fractions are avoided 
                         (if det_value is chosen to be \u00B11).''', formatter_class=argparse.RawTextHelpFormatter, epilog=_epilog)
 
     parser.add_argument('parameters', nargs='*', help='''Set the parameters [dimension, det_value, lower_bound, upper_bound, rdn_prm, attempts]. 
