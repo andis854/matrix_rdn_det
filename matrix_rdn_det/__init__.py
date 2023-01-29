@@ -86,5 +86,7 @@ matrix_gen
     If the dimension is set to 7 or higher, it is recommended to set a few random parameters to
     speed up the calculcations. However, the randomness of the entries will decrease. The number
     of attemps is only used if there are randomized parameters set.
+    
+    Report bugs to andis854@outlook.com
 """
 from matrix_rdn_det.matrix_rdn_det import det_int,matrix_gen,numpy2latex
