@@ -736,7 +736,9 @@ if __name__ == '__main__':
                         \\end{array}
                         
                         https://github.com/andis854/matrix_rdn_det
-                        Report bugs to andis854@outlook.com''', formatter_class=argparse.RawTextHelpFormatter, epilog=_epilog)
+                        Report bugs to andis854@outlook.com
+                        Created by Anders Israelsson, 2023
+                        ''', formatter_class=argparse.RawTextHelpFormatter, epilog=_epilog)
 
     parser.add_argument('parameters', nargs='*', help='''Set the parameters [dimension, det_value, lower_bound, upper_bound, rdn_prm, attempts]. 
           dimension
