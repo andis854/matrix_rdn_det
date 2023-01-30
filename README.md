@@ -19,7 +19,6 @@ $ pip install matrix_rdn_det
 $ git clone https://github.com/andis854/matrix_rdn_det.git
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Move the directory _matrix_rdn_det/matrix_rdn_det_ (i.e. the inner directory) to a directory that is a search
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; path of Python, e.g.
 ```bash
 ~/.local/lib/python3.10/site-packages/ # Example of a common path.
