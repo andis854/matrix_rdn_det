@@ -13,7 +13,7 @@ det_int
     Parameters
     ----------
     matrix : numpy.array
-        Square matrix, which determinant is to be evaluated.
+        Numpy array representing a square matrix, which determinant is to be evaluated.
     
     Returns
     -------
