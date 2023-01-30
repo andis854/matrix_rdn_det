@@ -38,13 +38,13 @@ numpy2latex
     Notes
     -----
     The output can be used together with LaTeX environment, e.g.
-    \begin{pmatrix}
+    \\begin{pmatrix}
         [output]
-    \end{pmatrix}
+    \\end{pmatrix}
     or
-    \begin{array}
+    \\begin{array}
         [output]
-    \end{array}
+    \\end{array}
 
 matrix_gen
   Randomize a matrix with the determinant value as parameter.
@@ -87,6 +87,7 @@ matrix_gen
     speed up the calculcations. However, the randomness of the entries will decrease. The number
     of attemps is only used if there are randomized parameters set.
     
+    https://github.com/andis854/matrix_rdn_det
     Report bugs to andis854@outlook.com
 """
 from matrix_rdn_det.matrix_rdn_det import det_int,matrix_gen,numpy2latex
