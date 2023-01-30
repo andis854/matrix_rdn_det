@@ -18,13 +18,13 @@ $ pip install matrix_rdn_det
 ```bash
 $ git clone https://github.com/andis854/matrix_rdn_det.git
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Move the directory _matrix_rdn_det/matrix_rdn_det_ (i.e. the inner directory) to a directory that is a search\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Move the directory _matrix_rdn_det_ (i.e. the inner directory) to a directory that is a search\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; path of Python, e.g.
 ```bash
 ~/.local/lib/python3.10/site-packages/ # Example of a common path.
 ```
 3. Download the source code: (also works for Windows) 
-Download the files in [tar.gz](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.tar.gz) or [zip](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.zip) form. Extract the directory _matrix_rdn_det/matrix_rdn_det_ (i.e. the inner directory) and put in a directory that is a search path of Python, e.g.
+Download the files in [tar.gz](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.tar.gz) or [zip](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.zip) form. Extract the directory _matrix_rdn_det_ (i.e. the inner directory) and put in a directory that is a search path of Python, e.g.
 ```bash
 ~/.local/lib/python3.10/site-packages/ # Example of a common path.
 ```
@@ -71,7 +71,7 @@ $ git clone https://github.com/andis854/matrix_rdn_det.git
 ~/.local/bin/ # Example of a common path.
 ```
 2. Download the source code: 
-Download the files in [tar.gz](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.tar.gz) or [zip](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.zip) form. Extract the file _matrix_rdn_det/matrix_rdn_det_ (i.e. the inner directory) to a directory that is in the variable $PATH, e.g.
+Download the files in [tar.gz](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.tar.gz) or [zip](https://github.com/andis854/matrix_rdn_det/archive/refs/tags/v_0.0.3.zip) form. Extract the file _matrix_rdn_det_ (i.e. the inner directory) to a directory that is in the variable $PATH, e.g.
 ```bash
 ~/.local/bin/ # Example of a common path.
 ```
