@@ -89,5 +89,6 @@ matrix_gen
     
     https://github.com/andis854/matrix_rdn_det
     Report bugs to andis854@outlook.com
+    Created by Anders Israelsson, 2023-01-30
 """
 from matrix_rdn_det.matrix_rdn_det import det_int,matrix_gen,numpy2latex
