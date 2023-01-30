@@ -5,7 +5,7 @@ This package can be used for e.g. linear algebra teachers that want to create sy
 
 Below we describe two ways of installing and using this package; by calling it from a Linux shell or from a Python shell.
 
-## Using Python shell
+## Using Python Shell
 
 ###  Download
 
