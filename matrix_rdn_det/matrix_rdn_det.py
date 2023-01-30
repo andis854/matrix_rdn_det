@@ -2,6 +2,7 @@
 ' '
 # Created by: Anders Israelsson, 2023
 # Email: andis854@outlook.com
+# https://github.com/andis854/matrix_rdn_det
 
 import numpy
 
@@ -723,14 +724,15 @@ if __name__ == '__main__':
                         of attemps is only used if there are randomized parameters set.
     
                         The standard output can be used together with some LaTeX environments, e.g.
-                        \begin{pmatrix}
+                        \\begin{pmatrix}
                             [output]
-                        \end{pmatrix}
+                        \\end{pmatrix}
                         or
-                        \begin{array}
+                        \\begin{array}
                             [output]
-                        \end{array}
+                        \\end{array}
                         
+                        https://github.com/andis854/matrix_rdn_det
                         Report bugs to andis854@outlook.com''', formatter_class=argparse.RawTextHelpFormatter, epilog=_epilog)
 
     parser.add_argument('parameters', nargs='*', help='''Set the parameters [dimension, det_value, lower_bound, upper_bound, rdn_prm, attempts]. 
