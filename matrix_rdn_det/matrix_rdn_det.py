@@ -67,6 +67,7 @@ def det_int(matrix):
 # denominator*div_rest[0]+div_rest[1] and abs(div_rest[1]) is the
 # smallest possible value.
 def divmod_mod(numerator, denominator): 
+    '\b'
     if ((not type(numerator) is int) or (not type(denominator) is int)) and ((not type(numerator) is numpy.int64) or (not type(denominator) is numpy.int64)):
         raise TypeError('Input must be of type int or numpy.int64')
     div_rest = numpy.array(numpy.divmod(numerator, denominator))
@@ -80,6 +81,7 @@ def divmod_mod(numerator, denominator):
 
 # Calculate the greatest common divisor of a numpy array of integers.
 def gcd(array):
+    '\b'
     if not type(array) is numpy.ndarray:
         raise TypeError('Input must be of type numpy.ndarray')
     if numpy.size(array) > 2:
