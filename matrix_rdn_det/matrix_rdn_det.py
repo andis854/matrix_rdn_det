@@ -11,7 +11,8 @@ import numpy
 def det_int(matrix):
     '''Calculate the determinant of a square matrix with integer entries. 
     
-    The function expands rows and columns recursively and reduces calculation by finding the rows/columns with the largest number of zeroes.
+    The function expands rows and columns recursively and reduces calculation by 
+    finding the rows/columns with the largest number of zeroes.
     
     Parameters
     ----------
@@ -105,18 +106,18 @@ def numpy2latex(matrix,_print=False):
     Returns
     -------
     output : str
-        If _print is set to False the function returns a string that is LaTeX friendly when printed. 
+        If _print is set to 'False' the function returns a string that is LaTeX friendly when printed. 
     
     Notes
     -----
     The output can be used together with some LaTeX environments, e.g.
-    \begin{pmatrix}
+    \\begin{pmatrix}
         [output]
-    \end{pmatrix}
+    \\end{pmatrix}
     or
-    \begin{array}
+    \\begin{array}
         [output]
-    \end{array}
+    \\end{array}
     
     Examples
     --------
