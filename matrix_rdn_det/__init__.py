@@ -5,7 +5,7 @@ This can be used for e.g. linear algebra teachers that want to create system of 
 that are easy to solve by hand and possibly where fractions are avoided 
 (if det_value is chosen to be \u00B11).
                         
-Functions
+\b\b\b\b\b\b\b\b\N{Mathematical Bold Capital F}\N{Mathematical Bold Capital U}\N{Mathematical Bold Capital N}\N{Mathematical Bold Capital C}\N{Mathematical Bold Capital T}\N{Mathematical Bold Capital I}\N{Mathematical Bold Capital O}\N{Mathematical Bold Capital N}\N{Mathematical Bold Capital S}
 ---------
 det_int
   Calculate the determinant of a square matrix with integer entries.
