@@ -6,7 +6,7 @@ that are easy to solve by hand and possibly where fractions are avoided
 (if det_value is chosen to be \u00B11).
                         
 Functions
--------
+---------
 det_int
   Calculate the determinant of a square matrix with integer entries.
   
