@@ -76,10 +76,6 @@ Download the files in [tar.gz](https://github.com/andis854/matrix_rdn_det/archiv
 ~/.local/bin/ # Example of a common path.
 ```
 
-Make the script executable, e.g.
-```bash
-$ chmod u+x ~/.local/bin/matrix_rdn_det # Use the path of the file
-```
 To find the available search paths, type the following in a Linux terminal.
 ```bash
 $ echo $PATH
