@@ -155,6 +155,28 @@ def numpy2latex(matrix,_print=False):
         return output
 
 
+
+def mx_ev(eigenvalues):
+    a= matrix_gen()
+    ainv = numpy.array([[a[1,1],-a[0,1]],[-a[1,0],a[0,0]]])
+
+
+    for t in range(-40,40):
+        print(a@numpy.array([[eigenvalues[0],t],[0,eigenvalues[1]]])@ainv)
+
+    return
+
+
+
+
+
+
+
+
+
+
+
+
 # matrix_gen outputs a random matrix with requested value of the determinant.
 def matrix_gen(dimension = 2, det_value = 1, lower_bound = -9, upper_bound = 10, rdn_prm = 0, attempts=200):
 
@@ -712,53 +734,9 @@ if __name__ == '__main__':
                           -3 & 11 & -1 & -1 & -3 & 8 & 5 \\\\
                           9 & 4 & 6 & -2 & 9 & 6 & -3 \\\\
                           -1 & 7 & 13 & 5 & 6 & -3 & 12'''
-    parser = argparse.ArgumentParser(description='''                        Randomize a matrix with the determinant value as a parameter. The output is LaTeX compatible.
-    
-                        This can be used for e.g. teachers in linear algebra who want to create system of equations 
-                        exercises that are easy to solve by hand and possibly where fractions are avoided 
-                        (if det_value is chosen to be \u00B11).
-                        
-                        When the dimension is 2 or 3 the difference between lower_bound and upper_bound has to be at
-                        least 3 (except if lower_bound <= -1 and upper_bound >=1). This is to ensure that the problem
-                        is solvable. Otherwise the difference between lower_bound and upper_bound has to be at least 2.
+    parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter, epilog=_epilog)
 
-                        If the dimension is set to 7 or higher, it is recommended to set a few random parameters to
-                        speed up the calculcations. However, the randomness of the entries will decrease. The number
-                        of attemps is only used if there are randomized parameters set.
-    
-                        The standard output can be used together with some LaTeX environments, e.g.
-                        \\begin{pmatrix}
-                            [output]
-                        \\end{pmatrix}
-                        or
-                        \\begin{array}
-                            [output]
-                        \\end{array}
-                        
-                        https://github.com/andis854/matrix_rdn_det
-                        Report bugs to andis854@outlook.com
-                        Created by Anders Israelsson, 2023
-                        ''', formatter_class=argparse.RawTextHelpFormatter, epilog=_epilog)
-
-    parser.add_argument('parameters', nargs='*', help='''Set the parameters [dimension, det_value, lower_bound, upper_bound, rdn_prm, attempts]. 
-          dimension
-            Dimension of the matrix. If set to a non-positive integer the function returns an 
-            empty matrix. Default is 2.
-          det_value
-            Value of the determinant of the matrix. Must be an integer. Default is 1.
-          lower_bound
-            Sets the lower bound of the entries in the matrix to lower_bound. Default is -9.
-          upper_bound
-            Sets the upper bound of the entries in the matrix to upper_bound-1. Default is 10.
-          rdn_prm
-            Sets the number of randomized parameters in the function. This can be used to speed
-            up the calculations if the determant value is large (e.g. 7 or larger). If rdm_prm is set
-            out of range, this is automatically adjusted. Default value is 0.
-          attempts
-            Sets the number of attempts to randomized parameters in the function. This is used to
-            restart the function if the calculations are taking too long if the determinant value is
-            large (e.g. 7 or larger). Default value is 200.
-    ''')
+    parser.add_argument('parameters', nargs='*')
 
     args=parser.parse_args()
 
@@ -767,7 +745,5 @@ if __name__ == '__main__':
 
     arguments[0:len(args.parameters)] = args.parameters 
 
-
-    a = matrix_gen(int(arguments[0]),int(arguments[1]),int(arguments[2]),int(arguments[3]),int(arguments[4]),int(arguments[5]))
-    sys.stdout.write(numpy2latex(a,_print=False)+'\n')
+    mx_ev(numpy.array([int(arguments[0]),int(arguments[1])]))
 
