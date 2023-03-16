@@ -88,7 +88,7 @@ matrix_gen
     of attemps is only used if there are randomized parameters set.
     
     https://github.com/andis854/matrix_rdn_det
-    Report bugs to andis854@outlook.com
-    Created by Anders Israelsson, 2023-0
+    Report bugs at https://github.com/andis854/matrix_rdn_det/issues
+    Created by Anders Israelsson, 2023
 """
 from matrix_rdn_det.matrix_rdn_det import det_int,matrix_gen,numpy2latex

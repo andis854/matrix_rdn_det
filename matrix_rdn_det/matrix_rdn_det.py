@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 ' '
 # Created by: Anders Israelsson, 2023
-# Email: andis854@outlook.com
 # https://github.com/andis854/matrix_rdn_det
 
 import numpy
@@ -676,7 +675,7 @@ if __name__ == '__main__':
                           9 & -1 \\\\
                           1 & 0
   matrix_rdn_det.py 5
-                        Outputs a matrix of dimension 3 with determinant 1 and entries between -9 and 9.
+                        Outputs a matrix of dimension 5 with determinant 1 and entries between -9 and 9.
                         Example output:
                           -2 & 3 & 5 & 7 & 7 \\\\
                           -2 & 2 & 6 & -4 & -7 \\\\
@@ -736,7 +735,7 @@ if __name__ == '__main__':
                         \\end{array}
                         
                         https://github.com/andis854/matrix_rdn_det
-                        Report bugs to andis854@outlook.com
+                        Report bugs at https://github.com/andis854/matrix_rdn_det/issues
                         Created by Anders Israelsson, 2023
                         ''', formatter_class=argparse.RawTextHelpFormatter, epilog=_epilog)
 
