@@ -62,52 +62,6 @@ def det_int(matrix):
         return int(determinant)
 
 
-# Inverse calulator - experiment stage
-def adj_int(matrix):
-    dimension = numpy.size(matrix, axis=0)
-    if dimension != numpy.size(matrix, axis=1):
-        raise TypeError('Not a square matrix!')
-    elif dimension == 1:
-        return matrix[0,0]
-    else:
-        determinant = det_int(matrix) 
-        print('determinant = ',determinant)
-        adj = numpy.zeros([dimension,dimension],int)
-
-        for row in range(0, dimension):
-            for column in range(0,dimension):
-                adj[column,row] = (-1)**(row+column)*det_int(numpy.delete(numpy.delete(matrix, row, axis=0), column, axis=1))
-
-
-#             if numpy.count_nonzero(matrix[row, :]) < max_zero:
-#                 max_zero = numpy.count_nonzero(matrix[row, :])
-#                 row_column_index = row
-#         for column in range(0, dimension):
-#             if numpy.count_nonzero(matrix[:, column]) < max_zero:
-#                 max_zero = numpy.count_nonzero(matrix[:, column])
-#                 row_column_index = row + dimension
-# 
-#         determinant = 0
-#         if row_column_index < dimension:
-#             for column in range(0, dimension):
-#                 if matrix[row_column_index, column] != 0:
-#                     determinant += (-1)**(row_column_index + column) * matrix[
-#                         row_column_index, column] * det_int(
-#                             numpy.delete(numpy.delete(matrix, row_column_index, axis=0), column, axis=1))
-# 
-#         else:
-#             row_column_index -= dimension
-#             for row in range(0, dimension):
-#                 if matrix[row, row_column_index] != 0:
-#                     determinant += (-1)**(
-#                         row_column_index + row) * matrix[row, row_column_index] * det_int(
-#                             numpy.delete(numpy.delete(matrix, row_column_index, axis=1), row, axis=0))
-
-        return adj
-
-
-
-
 # divmod_mod calculates the 2-array div_rest such that numerator = 
 # denominator*div_rest[0]+div_rest[1] and abs(div_rest[1]) is the
 # smallest possible value.
