@@ -91,4 +91,4 @@ matrix_gen
     Report bugs at https://github.com/andis854/matrix_rdn_det/issues
     Created by Anders Israelsson, 2023
 """
-from matrix_rdn_det.matrix_rdn_det import det_int,matrix_gen,numpy2latex
+from matrix_rdn_det.matrix_rdn_det import det_int,matrix_gen,numpy2latex,adj_int
