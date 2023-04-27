@@ -62,7 +62,6 @@ def det_int(matrix):
         return int(determinant)
 
 
-
 # divmod_mod calculates the 2-array div_rest such that numerator = 
 # denominator*div_rest[0]+div_rest[1] and abs(div_rest[1]) is the
 # smallest possible value.
